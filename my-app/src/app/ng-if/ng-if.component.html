@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Teste NG IF -->
+
+<p>
+    Testando NG IF
+  </p>
+  
+  <div *ngIf = "test.length == 0">
+    <h1>Test NgIf On</h1>
+  </div>
+  
+  <div *ngIf = "test.length > 0">
+    <h1>Test NgIf OFF</h1>
+  </div>
+  <br>
+  <div style="text-align:center;">
+  
+  
+  <div *ngIf = "mostrarTest">
+    
+    <h2>Test NgIf ON <span class="badge badge-secondary">New</span></h2>
+     
+  </div>
+  
+  <div *ngIf = "!mostrarTest">
+    <h1>Test NgIf OFF</h1>
+    
+  </div>
+  
+  <button (click)="OnMostrarTest()" class="btn btn-primary">Mostrar / Esconder</button>
+  <br><br>
+  
+  <div *ngIf = "mostrar1" style="text-align:center">
+    <div class="row" style="text-align:center;">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  <div *ngIf = "!mostrar1">
+    
+  </div>
+  <button (click)="OnMostrar1()" class="btn btn-success">Mostrar / Esconder</button>
+  </div>
+  <br><br>
+  <div style="text-align:center">
+  <h3>{{ valor }}</h3>
+  
+  <button (click)="OnMostrarMenos()" class="btn btn-danger">-</button>
+  &nbsp;{{ valor }}&nbsp;
+  <button (click)="OnMostrarMais()" class="btn btn-primary">+</button>
+
+  <br><br>
+      <button routerLink="/ngswitch" class="btn btn-primary">Voltar</button>
+
+      
+  </div>
+
+  

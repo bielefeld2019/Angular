@@ -1,3 +1,5 @@
+import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
+import { CursosComponent } from './cursos/cursos.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NgIfComponent } from './ng-if/ng-if.component';
@@ -11,6 +13,8 @@ const routes: Routes = [
   { path: 'ngfor', component: NgForComponent },
   { path: 'ngswitch', component: NgSwitchComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'cursos', component: CursosComponent },
+  { path: 'cursos/:id', component: CursoDetalheComponent },
   { path: '', component: HomeComponent }
 ];
 

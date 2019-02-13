@@ -8,6 +8,7 @@ export class ProdutosService {
   private produtos: any[] = [
     {id: 1, nome: 'Notebook',  descricao: 'HP', categoria: 'Eletrônicos', qnt: 2},
     {id: 2, nome: 'MacBook',  descricao: 'Apple', categoria: 'Eletrônicos', qnt: 1},
+    {id: 3, nome: 'Iphone',  descricao: 'Apple', categoria: 'Eletrônicos', qnt: 8},
     {id: 4, nome: 'Smartphone',  descricao: 'Motorola', categoria: 'Eletrônicos', qnt: 7},
     {id: 5, nome: 'Celular',  descricao: 'Nokia', categoria: 'Eletrônicos', qnt: 12},
     {id: 6, nome: 'Camisa',  descricao: 'Supreme', categoria: 'Roupas', qnt: 22},

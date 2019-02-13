@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'rotas';
   aba:string = 'home';
+  data_hora: string;
+
+  constructor() { 
+    setInterval(() => {
+      let currentDate = new Date();
+      this.data_hora = currentDate.toDateString() + '  |  ' + currentDate.toLocaleTimeString();
+    }, 1000);
+  }
 }

@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  data_hora: string;
+
+  constructor() {
+    setInterval(() => {
+      let currentDate = new Date();
+      this.data_hora = currentDate.toDateString() + '  |  ' + currentDate.toLocaleTimeString();
+    }, 1000);
+   }
 
   ngOnInit() {
   }

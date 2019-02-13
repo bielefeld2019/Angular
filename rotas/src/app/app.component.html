@@ -1,18 +1,25 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="#" crossorigin="anonymous">
 
 <!--The content below is only a placeholder and can be replaced.-->
+
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" [class.active]="aba == 'home'" (click)="aba = 'home'" routerLink="home">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" [class.active]="aba == 'login'" (click)="aba = 'login'" routerLink="login">Login</a>
+    <a class="nav-link active" [class.active]="aba == 'usuarios'" (click)="aba = 'usuarios'" routerLink="users">Usuários</a>
   </li>
   <li class="nav-item">
     <a class="nav-link active" [class.active]="aba == 'produtos'" (click)="aba = 'produtos'" routerLink="produtos">Produtos</a>
   </li>
-  
+  <li class="nav-item">
+    <a class="nav-link active" [class.active]="aba == 'categoria'" (click)="aba = 'categoria'" routerLink="categorias">Categoria</a>
+  </li>
+  <li class="nav-item">
+    <p class="nav-link active" >{{data_hora}}</p>
+   </li>
+
 </ul>
 
 <div class="container">

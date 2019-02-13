@@ -11,6 +11,10 @@ export class ProdutosComponent implements OnInit {
 
   private produtos:any[] =[];
 
+  title_prod = new Promise((resolve, reject) =>{
+    setTimeout(() => resolve('LISTA DE PRODUTOS'), 1000)
+  });
+  
   constructor(private produtosService: ProdutosService) { }
 
   ngOnInit() {
